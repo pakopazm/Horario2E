@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/Dgest.png">
+  <link rel="stylesheet" href="css/onsenui.css">
+  <link rel="stylesheet" href="css/onsen-css-components.css">
+  <icon src="img/Dgest.png" />
+  <title>Inicio</title>
+</head>
+
+<body onload="init()">
+  <ons-splitter>
+    <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+      <ons-page>
+        <ons-card>
+          <div align="center">
+          <ons-row >
+              <ons-col width="50px"><img src="img/Dgest.png" class="img-fluid" width="45" height="45" /></ons-col>
+              <ons-col><p>EST 79<br>2° E</p></ons-col>
+            </ons-row>
+          </div>
+          </ons-card>
+        <ons-list>
+          <ons-list-item onclick="fn.load('lunes.html')" tappable>
+            Lunes
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('martes.html')" tappable>
+            Martes
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('miercoles.html')" tappable>
+            Miercoles
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('jueves.html')" tappable>
+            Jueves
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('viernes.html')" tappable>
+            Viernes
+          </ons-list-item>
+        </ons-list>
+    </ons-splitter-side>
+    <ons-splitter-content id="content">
+      <ons-page>
+        <ons-toolbar>
+          <div class="left">
+            <ons-toolbar-button onclick="fn.open()">
+              <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+          <div class="center">
+              Escuela Secundaria Tecnica 79
+          </div>
+        </ons-toolbar>
+        <ons-pull-hook id="pull-hook">
+            Actualizar
+          </ons-pull-hook>
+        <ons-card>
+          <div align="center">
+          <h1 class="display-3">Horario Escolar</h1>
+          <h2>Segundo Grado</h2>
+          <h3>Grupo "E"</h2>
+        </div>
+        </ons-card>
+        <ons-bottom-toolbar>
+            <p align="center">Ciclo Escolar 2019-2018</p>
+            </ons-bottom-toolbar>
+      </ons-page>
+      
+    </ons-splitter-content>
+  </ons-splitter>
+
+
+
+  <!-- templates -->
+  <template id="lunes.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Lunes
+        </div>
+      </ons-toolbar>
+      <ons-pull-hook id="pull-hook">
+          Actualizar
+        </ons-pull-hook>
+      <ons-list>
+          <ons-list-header>07:00 - 08:40</ons-list-header>
+          <ons-list-item tappable>Tecnología</ons-list-item>
+          <ons-list-header>08:40 - 09:30</ons-list-header>
+          <ons-list-item tappable>Historia</ons-list-item>
+          <ons-list-header>09:30 - 10:20</ons-list-header>
+          <ons-list-item tappable>Educación Física</ons-list-item>
+          <ons-list-header>10:20 - 10:40</ons-list-header>
+          <ons-list-item tappable>Receso</ons-list-item>
+          <ons-list-header>10:40 - 12:20</ons-list-header>
+          <ons-list-item tappable>Ciencias</ons-list-item>
+          <ons-list-header>12:20 - 02:00</ons-list-header>
+          <ons-list-item tappable>Matemáticas</ons-list-item>
+        </ons-list>
+        <ons-bottom-toolbar>
+            <p align="center">Ciclo Escolar 2019-2018</p>
+            </ons-bottom-toolbar>
+    </ons-page>
+    
+  </template>
+
+  <template id="martes.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Martes
+        </div>
+      </ons-toolbar>
+      <ons-pull-hook id="pull-hook">
+          Actualizar
+        </ons-pull-hook>
+      <ons-list>
+          <ons-list-header>07:00 - 08:40</ons-list-header>
+          <ons-list-item tappable>Tecnología</ons-list-item>
+          <ons-list-header>08:40 - 10:20</ons-list-header>
+          <ons-list-item tappable>Formación Cívica y Ética</ons-list-item>
+          <ons-list-header>10:20 - 10:40</ons-list-header>
+          <ons-list-item tappable>Receso</ons-list-item>
+          <ons-list-header>10:40 - 12:20</ons-list-header>
+          <ons-list-item tappable>Español</ons-list-item>
+          <ons-list-header>12:20 - 01:10</ons-list-header>
+          <ons-list-item tappable>Ciencias</ons-list-item>
+          <ons-list-header>01:10 - 02:00</ons-list-header>
+          <ons-list-item tappable>Matemáticas</ons-list-item>
+        </ons-list>
+        <ons-bottom-toolbar>
+            <p align="center">Ciclo Escolar 2019-2018</p>
+            </ons-bottom-toolbar>
+    </ons-page>
+  </template>
+
+  <template id="miercoles.html">
+      <ons-page>
+        <ons-toolbar>
+          <div class="left">
+            <ons-toolbar-button onclick="fn.open()">
+              <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+          <div class="center">
+            Miercoles
+          </div>
+        </ons-toolbar>
+        <ons-pull-hook id="pull-hook">
+            Actualizar
+          </ons-pull-hook>
+        <ons-list>
+            <ons-list-header>07:00 - 08:40</ons-list-header>
+            <ons-list-item tappable>Historia</ons-list-item>
+            <ons-list-header>08:40 - 09:30</ons-list-header>
+            <ons-list-item tappable>Ingles</ons-list-item>
+            <ons-list-header>09:30 - 10:20</ons-list-header>
+            <ons-list-item tappable>Formación Cívica y Ética</ons-list-item>
+            <ons-list-header>10:20 - 10:40</ons-list-header>
+            <ons-list-item tappable>Receso</ons-list-item>
+            <ons-list-header>10:40 - 12:20</ons-list-header>
+            <ons-list-item tappable>Tecnología</ons-list-item>
+            <ons-list-header>12:20 - 01:10</ons-list-header>
+            <ons-list-item tappable>Tutoría</ons-list-item>
+            <ons-list-header>01:10 - 02:00</ons-list-header>
+            <ons-list-item tappable>Matemáticas</ons-list-item>
+          </ons-list>
+          <ons-bottom-toolbar>
+              <p align="center">Ciclo Escolar 2019-2018</p>
+              </ons-bottom-toolbar>
+      </ons-page>
+    </template>
+
+    <template id="jueves.html">
+        <ons-page>
+          <ons-toolbar>
+            <div class="left">
+              <ons-toolbar-button onclick="fn.open()">
+                <ons-icon icon="md-menu"></ons-icon>
+              </ons-toolbar-button>
+            </div>
+            <div class="center">
+              Jueves
+            </div>
+          </ons-toolbar>
+          <ons-pull-hook id="pull-hook">
+              Actualizar
+            </ons-pull-hook>
+          <ons-list>
+              <ons-list-header>07:00 - 08:40</ons-list-header>
+              <ons-list-item tappable>Español</ons-list-item>
+              <ons-list-header>08:40 - 10:20</ons-list-header>
+              <ons-list-item tappable>Ciencias</ons-list-item>
+              <ons-list-header>10:20 - 10:40</ons-list-header>
+              <ons-list-item tappable>Receso</ons-list-item>
+              <ons-list-header>10:40 - 11:30</ons-list-header>
+              <ons-list-item tappable>Ingles</ons-list-item>
+              <ons-list-header>11:30 - 12:20</ons-list-header>
+              <ons-list-item tappable>Artes</ons-list-item>
+              <ons-list-header>12:20 - 01:10</ons-list-header>
+              <ons-list-item tappable>Historia</ons-list-item>
+              <ons-list-header>01:10 - 02:00</ons-list-header>
+              <ons-list-item tappable>Formación Cívica y Ética</ons-list-item>
+            </ons-list>
+            <ons-bottom-toolbar>
+                <p align="center">Ciclo Escolar 2019-2018</p>
+                </ons-bottom-toolbar>
+        </ons-page>
+      </template>
+
+      <template id="viernes.html">
+          <ons-page>
+            <ons-toolbar>
+              <div class="left">
+                <ons-toolbar-button onclick="fn.open()">
+                  <ons-icon icon="md-menu"></ons-icon>
+                </ons-toolbar-button>
+              </div>
+              <div class="center">
+                Viernes
+              </div>
+            </ons-toolbar>
+            <ons-pull-hook id="pull-hook">
+                Actualizar
+              </ons-pull-hook>
+            <ons-list>
+                <ons-list-header>07:00 - 08:40</ons-list-header>
+                <ons-list-item tappable>Tecnología</ons-list-item>
+                <ons-list-header>08:40 - 09:30</ons-list-header>
+                <ons-list-item tappable>Matemáticas</ons-list-item>
+                <ons-list-header>09:30 - 10:20</ons-list-header>
+                <ons-list-item tappable>Artes</ons-list-item>
+                <ons-list-header>10:20 - 10:40</ons-list-header>
+                <ons-list-item tappable>Receso</ons-list-item>
+                <ons-list-header>10:40 - 12:20</ons-list-header>
+                <ons-list-item tappable>Ciencias</ons-list-item>
+                <ons-list-header>12:20 - 01:10</ons-list-header>
+                <ons-list-item tappable>Ingles</ons-list-item>
+                <ons-list-header>01:10 - 02:00</ons-list-header>
+                <ons-list-item tappable>Educación Física</ons-list-item>
+              </ons-list>
+              <ons-bottom-toolbar>
+                  <p align="center">Ciclo Escolar 2019-2018</p>
+                  </ons-bottom-toolbar>
+          </ons-page>
+        </template>
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/onsenui.js"></script>
+
+  <script>
+    function init() {
+      var a = new Date().getDay();
+      switch (a) {
+        case 1:
+        fn.load("lunes.html")
+          break;
+        case 2:
+        fn.load("martes.html")
+          break;
+        case 3:
+        fn.load("miercoles.html")
+          break;
+        case 4:
+        fn.load("jueves.html")
+          break;
+        case 5:
+        fn.load("viernes.html")
+          break;
+      }
+    }
+
+    window.fn = {};
+
+    window.fn.open = function () {
+      var menu = document.getElementById('menu');
+      menu.open();
+    };
+
+    window.fn.load = function (page) {
+      var content = document.getElementById('content');
+      var menu = document.getElementById('menu');
+      content.load(page)
+        .then(menu.close.bind(menu));
+    };
+
+    ons.ready(function() {
+  var pullHook = document.getElementById('pull-hook');
+
+  pullHook.addEventListener('changestate', function(event) {
+    var message = '';
+
+    switch (event.state) {
+      case 'initial':
+        message = ' Actualizar';
+        break;
+      case 'preaction':
+        message = 'Soltar';
+        break;
+      case 'action':
+        message = 'Cargando...';
+        break;
+    }
+
+    pullHook.innerHTML = message;
+  });
+
+  pullHook.onAction = function(done) {
+    setTimeout(done, 1000);
+  };
+});
+  </script>
+</body>
+
+</html>
