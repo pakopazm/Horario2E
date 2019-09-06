@@ -53,9 +53,6 @@
               Escuela Secundaria Tecnica 79
           </div>
         </ons-toolbar>
-        <ons-pull-hook id="pull-hook">
-            Actualizar
-          </ons-pull-hook>
         <ons-card>
           <div align="center">
           <h1 class="display-3">Horario Escolar</h1>
@@ -86,9 +83,7 @@
           Lunes
         </div>
       </ons-toolbar>
-      <ons-pull-hook id="pull-hook">
-          Actualizar
-        </ons-pull-hook>
+    
       <ons-list>
           <ons-list-header>07:00 - 08:40</ons-list-header>
           <ons-list-item tappable>Tecnología</ons-list-item>
@@ -122,9 +117,7 @@
           Martes
         </div>
       </ons-toolbar>
-      <ons-pull-hook id="pull-hook">
-          Actualizar
-        </ons-pull-hook>
+   
       <ons-list>
           <ons-list-header>07:00 - 08:40</ons-list-header>
           <ons-list-item tappable>Tecnología</ons-list-item>
@@ -157,9 +150,7 @@
             Miercoles
           </div>
         </ons-toolbar>
-        <ons-pull-hook id="pull-hook">
-            Actualizar
-          </ons-pull-hook>
+       
         <ons-list>
             <ons-list-header>07:00 - 08:40</ons-list-header>
             <ons-list-item tappable>Historia</ons-list-item>
@@ -194,9 +185,7 @@
               Jueves
             </div>
           </ons-toolbar>
-          <ons-pull-hook id="pull-hook">
-              Actualizar
-            </ons-pull-hook>
+        
           <ons-list>
               <ons-list-header>07:00 - 08:40</ons-list-header>
               <ons-list-item tappable>Español</ons-list-item>
@@ -231,9 +220,7 @@
                 Viernes
               </div>
             </ons-toolbar>
-            <ons-pull-hook id="pull-hook">
-                Actualizar
-              </ons-pull-hook>
+           
             <ons-list>
                 <ons-list-header>07:00 - 08:40</ons-list-header>
                 <ons-list-item tappable>Tecnología</ons-list-item>
@@ -298,31 +285,7 @@
         .then(menu.close.bind(menu));
     };
 
-    ons.ready(function() {
-  var pullHook = document.getElementById('pull-hook');
-
-  pullHook.addEventListener('changestate', function(event) {
-    var message = '';
-
-    switch (event.state) {
-      case 'initial':
-        message = ' Actualizar';
-        break;
-      case 'preaction':
-        message = 'Soltar';
-        break;
-      case 'action':
-        message = 'Cargando...';
-        break;
-    }
-
-    pullHook.innerHTML = message;
-  });
-
-  pullHook.onAction = function(done) {
-    setTimeout(done, 1000);
-  };
-});
+   
   </script>
 </body>
 
