@@ -2,7 +2,7 @@
 <widget xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.fpazm.Horario2E" version="1.2.30" xmlns="http://www.w3.org/ns/widgets" defaultlocale="es-ES">
   <icon src="img/Dgest.png" />
   <name>Horario</name>
-  <description>Escuela Secundaria Tecnica 79 - orario 2° E</description>
+  <description>Escuela Secundaria Tecnica 79 - Horario 2° E</description>
   <author email="pakopazm@gmail">Francisco Paz Maldonado</author>
   <engine name="android" spec="~5.2.1" />
   <engine name="ios" spec="~4.2.0" />
